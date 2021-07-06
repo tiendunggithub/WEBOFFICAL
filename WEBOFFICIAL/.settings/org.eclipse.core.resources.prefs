@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+encoding//WebContent/views/footer.jsp=UTF-8
+encoding//src/controllers/admin/DeleteProductServlet.java=UTF-8
+encoding//src/controllers/web/HomeServlet.java=UTF-8
