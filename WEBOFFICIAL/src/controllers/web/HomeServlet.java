@@ -16,6 +16,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import beans.Category;
 import beans.Product;
 
 import model.SQLServerConnUtils_SQLJDBC;
@@ -37,12 +38,18 @@ public class HomeServlet extends HttpServlet {
         //b1: get data from dao
         docDB db = new docDB();
         
+        List<Product> list = db.getAllproduct(); 
+        List<Category> listC = db.getAllcategory();
         Product last = db.getLast();
-        
+              
         //b2: set data to jsp
+        request.setAttribute("product", list);
+        request.setAttribute("category", listC);
+        
         request.setAttribute("lastp", last);
+        
 		request.getRequestDispatcher("/views/home.jsp").forward(request, response);
-        //404 -> url
+        //404 -> url 
         //500 -> jsp properties
     }
     @Override

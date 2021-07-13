@@ -7,17 +7,10 @@ public class Product {
 	private String detail;
 	private String image;
 	private String idc;
-	private int amount;
 
 	public Product() {
 	}
-	public Product(String id, String name, String image, double price, int amount) {
-        this.id = id;
-        this.productname = name;
-        this.image = image;
-        this.price = price;
-        this.amount = amount;
-    }
+	
 	public Product(String id, String productname, double price, String detail, String image) {
 		super();
 		this.id = id;
@@ -83,11 +76,6 @@ public class Product {
 	public void setIdc(String idc) {
 		this.idc = idc;
 	}
-	public int getAmount() {
-		return amount;
-	}
-	public void setAmount(int amount) {
-		this.amount = amount;
-	}
+	
 	
 }

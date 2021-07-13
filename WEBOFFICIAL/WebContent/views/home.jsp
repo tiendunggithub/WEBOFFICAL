@@ -81,12 +81,12 @@
 								<div class="card">
 									<img class="card-img-top"
 										src="<%=request.getContextPath()%>/images/${product.image}"
-										alt="Card image cap">
+										alt="Card image cap"> 
 									</image>
 									<div class="card-body">
 										<h4 class="card-title">
 											<a href="detail?id=${product.id}"
-												title="View Product">${product.productname}</a>
+												title="View Product">test ${product.productname}</a>
 										</h4>
 										<p class="card-text show_txt">${product.price}VND</p>
 										<div class="row">
@@ -107,9 +107,10 @@
 						<br>
 					</c:forEach>
 				</div>
-			</div>
+			</div>		
 		</div>
 	</div>
+	
 	<!-- footer -->
 	<jsp:include page="footer.jsp" />
 
