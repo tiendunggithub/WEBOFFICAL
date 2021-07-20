@@ -86,7 +86,7 @@
 									<div class="card-body">
 										<h4 class="card-title">
 											<a href="detail?id=${product.id}"
-												title="View Product">${product.productname}</a>
+												title="View Product">s${product.productname}</a>
 										</h4>
 										<p class="card-text show_txt">${product.price}VND</p>
 										<div class="row">
@@ -97,7 +97,7 @@
 											</div>
 											<div class="col">
 												<a href="detail?id=${product.id}"
-													class="btn btn-warning btn-block">Xem thêm</a>
+													class="btn btn-warning btn-block">Xem chi tiết</a>
 											</div>
 										</div>
 									</div>
