@@ -16,7 +16,7 @@
 	href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
 	integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
 	crossorigin="anonymous">
-<link rel="stylesheet" href="./css/stylehome.css">
+<link rel="stylesheet" href="./css/test.css">
 <title>HOME</title>
 </head>
 <body>
@@ -86,7 +86,7 @@
 									<div class="card-body">
 										<h4 class="card-title">
 											<a href="detail?id=${product.id}"
-												title="View Product">test ${product.productname}</a>
+												title="View Product">${product.productname}</a>
 										</h4>
 										<p class="card-text show_txt">${product.price}VND</p>
 										<div class="row">
